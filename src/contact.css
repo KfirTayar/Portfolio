@@ -1,0 +1,30 @@
+.contact-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-paper {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-container h1 {
+    color: #007bff;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+}
+
+.contact-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-container li {
+    margin-bottom: 10px;
+}
