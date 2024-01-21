@@ -4,20 +4,19 @@ import React from "react";
 
 const CustomCard = ({title, content, image, actionButtonLabel, onActionButtonClick}) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ display: 'flex', flexDirection: 'column', height: 450 }}>
             <CardMedia component="img" alt={title} height='auto' src={image} />
-            <CardContent>
+            <CardContent sx={{ flex: 1 }}>
                 <Typography variant="body2" color="text.secondary" fontFamily='cursive' fontWeight='bold'>
                     {content}
                 </Typography>
             </CardContent>
             <CardActions>
                 {actionButtonLabel && (
-                    <Button size="small" onClick={onActionButtonClick}>
+                    <Button sx={{ marginTop: 'auto'}} onClick={onActionButtonClick}>
                         {actionButtonLabel}
                     </Button>
                 )}
-                {/* Add more action buttons if needed */}
             </CardActions>
         </Card>
     );

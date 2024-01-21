@@ -4,7 +4,7 @@ import CustomCard from "./customCard.js";
 
 // Imports from MUI lib
 import Paper from "@mui/material/Paper";
-import {Container, Grid, Typography} from "@mui/material"; // Import your styles
+import {Container, Grid} from "@mui/material";
 import Copyright from "./components/Copyright";
 
 // Import images
@@ -17,7 +17,6 @@ import SecureDevelopmentImg from './images/secure_development.jpg';
 import PongGameImg from './images/pong_game.jpg';
 import TextAnalysisImg from './images/text_analysis.jpg';
 import PortfolioImg from './images/portfolio.jpg';
-import Link from "@mui/material/Link";
 
 function ProjectsPage() {
 
@@ -29,26 +28,6 @@ function ProjectsPage() {
     const cardData = [
         {
             id: 1,
-            title: 'FRIEND ON THE ROAD',
-            content: 'Object tracking project that was built with Python and using OpenCV library.',
-            image: FriendOnTheRoadImg,
-            actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Friend-on-the-road" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
-                <div className="overlay-text">project page</div> </div>,
-        },
-
-        {
-            id: 2,
-            title: 'PARKING METER',
-            content: 'A Parking Meter program that was built with MFC framework using event-driven programming.',
-            image: ParkingMeterImg,
-            actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Parking-Meter" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
-                <div className="overlay-text">project page</div> </div>,
-        },
-
-        {
-            id: 3,
             title: 'COST MANAGER - CLIENT SIDE',
             content: 'A cost manager application that was built with React.js and using Local Storage.',
             image: CostManagerClientImg,
@@ -58,7 +37,17 @@ function ProjectsPage() {
         },
 
         {
-            id: 4,
+            id: 2,
+            title: 'MERN STACK PORTFOLIO',
+            content: 'A MERN Stack portfolio application',
+            image: PortfolioImg,
+            actionButtonLabel: <div className='open-github-page'>
+                <a href="https://github.com/KfirTayar/Portfolio" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <div className="overlay-text">project page</div> </div>,
+        },
+
+        {
+            id: 3,
             title: 'COST MANAGER - SERVER SIDE',
             content: 'A cost manager RESTful web service that was built with Express.js and using MongoDB.',
             image: CostManagerServerImg,
@@ -66,6 +55,17 @@ function ProjectsPage() {
                 <a href="https://github.com/KfirTayar/Cost-Manager-Server-Side" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
                 <div className="overlay-text">project page</div> </div>,
         },
+
+        {
+            id: 4,
+            title: 'FRIEND ON THE ROAD',
+            content: 'Object tracking project that was built with Python and using OpenCV library.',
+            image: FriendOnTheRoadImg,
+            actionButtonLabel: <div className='open-github-page'>
+                <a href="https://github.com/KfirTayar/Friend-on-the-road" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <div className="overlay-text">project page</div> </div>,
+        },
+
 
         {
             id: 5,
@@ -89,11 +89,11 @@ function ProjectsPage() {
 
         {
             id: 7,
-            title: 'PONG',
-            content: 'Classic pong game with some extra features',
-            image: PongGameImg,
+            title: 'PARKING METER',
+            content: 'A Parking Meter program that was built with MFC framework using event-driven programming.',
+            image: ParkingMeterImg,
             actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Pong" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <a href="https://github.com/KfirTayar/Parking-Meter" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
                 <div className="overlay-text">project page</div> </div>,
         },
 
@@ -109,15 +109,13 @@ function ProjectsPage() {
 
         {
             id: 9,
-            title: 'MERN Stuck Portfolio',
-            content: 'A MERN Stack portfolio application',
-            image: PortfolioImg,
+            title: 'PONG',
+            content: 'Classic pong game with some extra features',
+            image: PongGameImg,
             actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Portfolio" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <a href="https://github.com/KfirTayar/Pong" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
                 <div className="overlay-text">project page</div> </div>,
         },
-
-        // Add more card data as needed
     ];
 
     return (
@@ -126,7 +124,6 @@ function ProjectsPage() {
                 <Grid container spacing={2}>
                     {cardData.map((card) => (
                         <Grid item key={card.id} className="card">
-                            {/* Use your CustomCard component */}
                             <CustomCard
                                 title={card.title}
                                 content={card.content}

@@ -1,13 +1,12 @@
 import React from 'react';
 import './about.css';
 import {useEffect} from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import myImg from './images/about.png';
-import {Chip, Stack, Typography} from "@mui/material";
-import {Link} from "react-router-dom";
-import Container from "@mui/material/Container";
 import Copyright from "./components/Copyright";
+
 // Imports from MUI lib
+import {Chip, Stack, Typography} from "@mui/material";
+import Container from "@mui/material/Container";
 
 const AboutPage = () => {
 
@@ -42,7 +41,7 @@ const AboutPage = () => {
                     <Typography variant="h5" className="skills-description" fontFamily='cursive' fontWeight='bold' sx={{marginY:6}}>
                         My Stack:<br />
                         <p className='skills-description-images'>
-                            <img className='about-image' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="80" height="80"/>
+                            <img className='about-image' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="c" width="80" height="80"/>
                             <img className='about-image' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="80" height="80"/>
                             <img className='about-image' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="java" width="80" height="80"/>
                             <img className='about-image' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="python" width="80" height="80"/>

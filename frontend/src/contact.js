@@ -1,20 +1,29 @@
-import './contact.css';
-import axios from 'axios';
 import {useEffect, useState} from "react";
+import axios from 'axios';
+import './contact.css';
 import copy from 'clipboard-copy';
 import Copyright from './components/Copyright';
 
+// Imports from MUI lib
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Paper from "@mui/material/Paper";
+import {Snackbar} from "@mui/material";
 
 const ContactPage = () => {
+
+    const [copyMsg, setCopyMsg] = React.useState(false);
+    const [sendData, setSendData] = React.useState(false);
+
+    const handleClose = () => {
+        setCopyMsg(false);
+        setSendData(false);
+    };
 
     // The title will update at every refresh
     useEffect(() => {
@@ -26,7 +35,8 @@ const ContactPage = () => {
     const handleCopyToClipboard = async () => {
         try {
             await copy(myGmail);
-            alert('Email copied to clipboard!');
+            setCopyMsg(true);
+            setTimeout(handleClose, 3000);
         } catch (error) {
             console.error('Failed to copy email to clipboard:', error);
         }
@@ -68,9 +78,10 @@ const ContactPage = () => {
 
         try {
             const response = await axios.post('http://localhost:3001/api/contact', formData);
-            alert('Data submitted successfully!', response.data);
+            setSendData(true);
+            setTimeout(handleClose, 3000);
         } catch (error) {
-            alert('Error submitting data:', error);
+            console.log('Error submitting data:', error);
         }
 
         clearButtons();
@@ -90,24 +101,21 @@ const ContactPage = () => {
                     <h1>OR</h1>
                 <Box component="form" noValidate onSubmit={handleSubmit} sx={{}}>
                     <Typography variant="h8" fontFamily='cursive' align={"left"}>
-                        Fill the contact form and I'll be in touch :)
+                        Fill out the contact form and I'll be in touch as soon as possible :)
                     </Typography>
                     <Grid container spacing={2} sx={{mt:0.1}}>
                         <Grid item xs={12} sm={6}>
                             <TextField
-                                required
                                 fullWidth
                                 value={firstName}
                                 id="firstName"
                                 label="First Name"
-                                autoComplete="given-name"
                                 name="firstName"
                                 onChange={e => setFirstName(e.target.value)}
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <TextField
-                                required
                                 fullWidth
                                 value={lastName}
                                 id="lastName"
@@ -123,13 +131,11 @@ const ContactPage = () => {
                                 id="company"
                                 label="Company"
                                 name="company"
-                                autoComplete="Null"
                                 onChange={e => setCompany(e.target.value)}
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <TextField
-                                required
                                 fullWidth
                                 value={mobile}
                                 id="mobile"
@@ -140,19 +146,16 @@ const ContactPage = () => {
                         </Grid>
                         <Grid item sm={6}>
                             <TextField
-                                required
                                 fullWidth
                                 value={email}
                                 id="email"
                                 label="Email Address"
                                 name="email"
-                                autoComplete="email"
                                 onChange={e => setEmail(e.target.value)}
                             />
                         </Grid>
                         <Grid item sm={6}>
                             <TextField
-                                required
                                 fullWidth
                                 value={jobTitle}
                                 id="jobTitle"
@@ -167,11 +170,9 @@ const ContactPage = () => {
                                 value={description}
                                 name="decryption"
                                 label="Tell me about this job offer"
-                                type="text"
                                 id="decryptionID"
                                 multiline
                                 rows={7}
-                                autoComplete="Null"
                                 onChange={e => setDescription(e.target.value)}
                             />
                         </Grid>
@@ -184,9 +185,19 @@ const ContactPage = () => {
                     >
                         SEND
                     </Button>
+                    <Snackbar
+                        open={sendData}
+                        anchorOrigin={{ vertical:'bottom', horizontal:'center' }}
+                        message='Data submitted successfully!'
+                    />
                 </Box>
                     <h1>OR</h1>
                     <img src="https://img.icons8.com/color/48/gmail-new.png" className='gmail-img' alt="gmail" height='60px' width='60px' onClick={handleCopyToClipboard}/>
+                    <Snackbar
+                        open={copyMsg}
+                        anchorOrigin={{ vertical:'bottom', horizontal:'center' }}
+                        message='Email copied to clipboard'
+                    />
         </Paper>
             < br/>
             <Copyright/>
