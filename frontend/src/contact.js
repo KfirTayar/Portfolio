@@ -76,8 +76,10 @@ const ContactPage = () => {
             description,
         };
 
+        axios.defaults.baseURL = 'https://kfirtayar.onrender.com:10000';
+
         try {
-            const response = await axios.post('https://kfirtayar.onrender.com:10000/api/contact', formData);
+            const response = await axios.post('/api/contact', formData);
             setSendData(true);
             setTimeout(handleClose, 3000);
         } catch (error) {
