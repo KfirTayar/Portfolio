@@ -39,7 +39,7 @@ function ProjectsPage() {
         {
             id: 2,
             title: 'MERN STACK PORTFOLIO',
-            content: 'A MERN Stack portfolio application',
+            content: 'A MERN Stack portfolio application that combines Backend and Frontend development.',
             image: PortfolioImg,
             actionButtonLabel: <div className='open-github-page'>
                 <a href="https://github.com/KfirTayar/Portfolio" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
@@ -80,7 +80,7 @@ function ProjectsPage() {
         {
             id: 6,
             title: 'TEXT ANALYSIS',
-            content: 'ML model that gets a corpus and uses ML algorithms (etc KNN, SVM, K-means ...) and classifies the texts by gender',
+            content: 'ML model that gets a corpus and uses ML algorithms (KNN, Decision-Tree, SVM, etc) and classifies the texts by gender.',
             image: TextAnalysisImg,
             actionButtonLabel: <div className='open-github-page'>
                 <a href="https://github.com/KfirTayar/ML-Text-Analysis" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
@@ -90,7 +90,7 @@ function ProjectsPage() {
         {
             id: 7,
             title: 'PARKING METER',
-            content: 'A Parking Meter program that was built with MFC framework using event-driven programming.',
+            content: 'A Parking Meter program that was built with MFC framework and using event-driven programming.',
             image: ParkingMeterImg,
             actionButtonLabel: <div className='open-github-page'>
                 <a href="https://github.com/KfirTayar/Parking-Meter" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
@@ -110,7 +110,7 @@ function ProjectsPage() {
         {
             id: 9,
             title: 'PONG',
-            content: 'Classic pong game with some extra features',
+            content: 'Classic pong game with some extra features.',
             image: PongGameImg,
             actionButtonLabel: <div className='open-github-page'>
                 <a href="https://github.com/KfirTayar/Pong" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
