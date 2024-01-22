@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5b458f79.chunk.css",
+    "main.js": "./static/js/main.6ceab204.chunk.js",
+    "main.js.map": "./static/js/main.6ceab204.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.3287d09a.js",
+    "runtime-main.js.map": "./static/js/runtime-main.3287d09a.js.map",
+    "static/js/2.b0f822f0.chunk.js": "./static/js/2.b0f822f0.chunk.js",
+    "static/js/2.b0f822f0.chunk.js.map": "./static/js/2.b0f822f0.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.873cf924e2737e4b087f7d25e815b340.js": "./precache-manifest.873cf924e2737e4b087f7d25e815b340.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.5b458f79.chunk.css.map": "./static/css/main.5b458f79.chunk.css.map",
+    "static/js/2.b0f822f0.chunk.js.LICENSE.txt": "./static/js/2.b0f822f0.chunk.js.LICENSE.txt",
+    "static/media/about.png": "./static/media/about.2a0abc96.png",
+    "static/media/cost_manager_client_side.jpg": "./static/media/cost_manager_client_side.92970275.jpg",
+    "static/media/cost_manager_server_side.jpg": "./static/media/cost_manager_server_side.2c156466.jpg",
+    "static/media/friend_on_the_road.jpg": "./static/media/friend_on_the_road.16f19757.jpg",
+    "static/media/gearbox_prediction.jpg": "./static/media/gearbox_prediction.9ca2b10a.jpg",
+    "static/media/parking_meter.jpg": "./static/media/parking_meter.cfe73743.jpg",
+    "static/media/pong_game.jpg": "./static/media/pong_game.528e0dbd.jpg",
+    "static/media/portfolio.jpg": "./static/media/portfolio.fbd35089.jpg",
+    "static/media/secure_development.jpg": "./static/media/secure_development.c329c70e.jpg",
+    "static/media/text_analysis.jpg": "./static/media/text_analysis.31ad53f6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3287d09a.js",
+    "static/js/2.b0f822f0.chunk.js",
+    "static/css/main.5b458f79.chunk.css",
+    "static/js/main.6ceab204.chunk.js"
+  ]
+}
