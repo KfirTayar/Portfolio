@@ -80,7 +80,7 @@ function ProjectsPage() {
         {
             id: 6,
             title: 'TEXT ANALYSIS',
-            content: 'ML model that gets a corpus and using ML algorithms (etc KNN, SVM, K-means ...) and classified the texts by gender',
+            content: 'ML model that gets a corpus and uses ML algorithms (etc KNN, SVM, K-means ...) and classifies the texts by gender',
             image: TextAnalysisImg,
             actionButtonLabel: <div className='open-github-page'>
                 <a href="https://github.com/KfirTayar/ML-Text-Analysis" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
