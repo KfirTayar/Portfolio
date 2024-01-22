@@ -76,7 +76,7 @@ const ContactPage = () => {
             description,
         };
 
-        axios.defaults.baseURL = 'https://kfirtayar.onrender.com:10000';
+        axios.defaults.baseURL = 'https://kfirtayar.onrender.com';
 
         try {
             const response = await axios.post('/api/contact', formData);
