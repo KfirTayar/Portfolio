@@ -76,10 +76,12 @@ const ContactPage = () => {
             description,
         };
 
-        axios.defaults.baseURL = 'https://kfirtayar.onrender.com';
+        axios.defaults.baseURL = process.env.BACKEND_URI;
 
         setSendData(true);
         setTimeout(handleClose, 3000);
+
+        clearButtons();
 
         try {
             await axios.post('/api/contact', formData);
@@ -87,8 +89,6 @@ const ContactPage = () => {
         } catch (error) {
             console.log('Error submitting data:', error);
         }
-
-        clearButtons();
     }
 
 
