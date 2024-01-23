@@ -82,7 +82,7 @@ const ContactPage = () => {
         setTimeout(handleClose, 3000);
 
         try {
-            const response = await axios.post('/api/contact', formData);
+            await axios.post('/api/contact', formData);
             console.log(('Data submitted successfully!'))
         } catch (error) {
             console.log('Error submitting data:', error);

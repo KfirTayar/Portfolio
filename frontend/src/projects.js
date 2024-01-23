@@ -14,7 +14,7 @@ import CostManagerClientImg from './images/cost_manager_client_side.jpg';
 import CostManagerServerImg from './images/cost_manager_server_side.jpg';
 import GearboxPredictionImg from './images/gearbox_prediction.jpg';
 import SecureDevelopmentImg from './images/secure_development.jpg';
-import PongGameImg from './images/pong_game.jpg';
+import QuizzyLibraryImg from './images/quizzy_library.jpg';
 import TextAnalysisImg from './images/text_analysis.jpg';
 import PortfolioImg from './images/portfolio.jpg';
 
@@ -58,6 +58,16 @@ function ProjectsPage() {
 
         {
             id: 4,
+            title: 'QUIZZY LIBRARY',
+            content: 'A library for creating quizzes implemented with the following design patterns: Singleton, DAO, Factory, Prototype, and Builder.',
+            image: QuizzyLibraryImg,
+            actionButtonLabel: <div className='open-github-page'>
+                <a href="https://github.com/KfirTayar/Quizzy-Library" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <div className="overlay-text">project page</div> </div>,
+        },
+
+        {
+            id: 5,
             title: 'FRIEND ON THE ROAD',
             content: 'Object tracking project that was built with Python and using OpenCV library.',
             image: FriendOnTheRoadImg,
@@ -68,7 +78,7 @@ function ProjectsPage() {
 
 
         {
-            id: 5,
+            id: 6,
             title: 'GEARBOX PREDICTION',
             content: 'A crawler that collects data from a rental car website and predicts which gearbox the car was equipped with.',
             image: GearboxPredictionImg,
@@ -78,7 +88,7 @@ function ProjectsPage() {
         },
 
         {
-            id: 6,
+            id: 7,
             title: 'TEXT ANALYSIS',
             content: 'ML model that gets a corpus and uses ML algorithms (KNN, Decision-Tree, SVM, etc) and classifies the texts by gender.',
             image: TextAnalysisImg,
@@ -88,7 +98,7 @@ function ProjectsPage() {
         },
 
         {
-            id: 7,
+            id: 8,
             title: 'PARKING METER',
             content: 'A Parking Meter program that was built with MFC framework and using event-driven programming.',
             image: ParkingMeterImg,
@@ -98,7 +108,7 @@ function ProjectsPage() {
         },
 
         {
-            id: 8,
+            id: 9,
             title: 'SECURE DEVELOPMENT',
             content: 'A website that is vulnerable to SQLI and XSS attacks.',
             image: SecureDevelopmentImg,
@@ -107,15 +117,6 @@ function ProjectsPage() {
                 <div className="overlay-text">project page</div> </div>,
         },
 
-        {
-            id: 9,
-            title: 'PONG',
-            content: 'Classic pong game with some extra features.',
-            image: PongGameImg,
-            actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Pong" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
-                <div className="overlay-text">project page</div> </div>,
-        },
     ];
 
     return (
