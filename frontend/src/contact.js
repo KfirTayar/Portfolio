@@ -91,11 +91,11 @@ const ContactPage = () => {
 
 
     return (
+        <div className='a'>
         <Container className="contact-container" component="main" maxWidth="md">
             <Typography variant="h4" className="contact-options" fontFamily='cursive' align={"center"}>
                 How to reach me?
             </Typography>
-
                 <Paper className="contact-paper" elevation={4} sx={{mt:2}}>
                     <p className='social-links'>
                         <a href="https://www.linkedin.com/in/kfir-tayar/" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="linkedin-page" height="60" width="60" /></a>
@@ -204,6 +204,7 @@ const ContactPage = () => {
             < br/>
             <Copyright/>
     </Container>
+        </div>
     );
 }
 

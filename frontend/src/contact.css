@@ -1,6 +1,10 @@
 .contact-container {
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 300px;
 }
 
 .contact-paper {
