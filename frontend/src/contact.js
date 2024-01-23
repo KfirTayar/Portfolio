@@ -76,7 +76,7 @@ const ContactPage = () => {
             description,
         };
 
-        axios.defaults.baseURL = process.env.BACKEND_URI;
+        axios.defaults.baseURL = "https://kfirtayar.onrender.com";
 
         setSendData(true);
         setTimeout(handleClose, 3000);
