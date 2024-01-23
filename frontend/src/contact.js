@@ -78,10 +78,12 @@ const ContactPage = () => {
 
         axios.defaults.baseURL = 'https://kfirtayar.onrender.com';
 
+        setSendData(true);
+        setTimeout(handleClose, 3000);
+
         try {
             const response = await axios.post('/api/contact', formData);
-            setSendData(true);
-            setTimeout(handleClose, 3000);
+            console.log(('Data submitted successfully!'))
         } catch (error) {
             console.log('Error submitting data:', error);
         }
@@ -190,7 +192,7 @@ const ContactPage = () => {
                     <Snackbar
                         open={sendData}
                         anchorOrigin={{ vertical:'bottom', horizontal:'center' }}
-                        message='Data submitted successfully!'
+                        message='Data submitted! Thank you for your time.'
                     />
                 </Box>
                     <h1>OR</h1>
