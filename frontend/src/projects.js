@@ -14,7 +14,7 @@ import CostManagerClientImg from './images/cost_manager_client_side.jpg';
 import CostManagerServerImg from './images/cost_manager_server_side.jpg';
 import GearboxPredictionImg from './images/gearbox_prediction.jpg';
 import SecureDevelopmentImg from './images/secure_development.jpg';
-import QuizzyLibraryImg from './images/quizzy_library.png';
+import QuizzyLibraryImg from './images/quizzy_library.jpg';
 import TextAnalysisImg from './images/text_analysis.jpg';
 import PortfolioImg from './images/portfolio.jpg';
 
