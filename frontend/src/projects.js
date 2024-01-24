@@ -14,7 +14,7 @@ import CostManagerClientImg from './images/cost_manager_client_side.jpg';
 import CostManagerServerImg from './images/cost_manager_server_side.jpg';
 import GearboxPredictionImg from './images/gearbox_prediction.jpg';
 import SecureDevelopmentImg from './images/secure_development.jpg';
-import QuizzyLibraryImg from './images/quizzy_library.jpg';
+import QuizzyLibraryImg from './images/quizzy_library.png';
 import TextAnalysisImg from './images/text_analysis.jpg';
 import PortfolioImg from './images/portfolio.jpg';
 
@@ -59,7 +59,7 @@ function ProjectsPage() {
         {
             id: 4,
             title: 'QUIZZY LIBRARY',
-            content: 'A library for creating quizzes implemented with the following design patterns: Singleton, DAO, Factory, Prototype, and Builder.',
+            content: 'A Java library for creating quizzes implemented with the following design patterns: Singleton, DAO, Factory, Prototype, and Builder.',
             image: QuizzyLibraryImg,
             actionButtonLabel: <div className='open-github-page'>
                 <a href="https://github.com/KfirTayar/Quizzy-Library" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
