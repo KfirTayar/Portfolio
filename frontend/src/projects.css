@@ -1,7 +1,7 @@
 .projects-paper {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
     margin-bottom: 20px;
-    padding: 30px; /* Adjust as needed */
+    padding: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -11,12 +11,12 @@
 }
 
 .open-github-page:hover {
-    transform: translateY(-15px); /* Move the image up on hover */
+    transform: translateY(-15px);
 }
 
 .overlay-text {
     position: absolute;
-    bottom: 14px; /* Adjust this value to move the text below the image */
+    bottom: 14px;
     left: 24px;
     width: 100%;
     color: #000;
@@ -25,9 +25,9 @@
 }
 
 .open-github-page:hover .overlay-text {
-    opacity: 1; /* Show text on hover */
+    opacity: 1;
 }
 
 .card {
-    width: 33%; /* Adjust as needed */
+    width: 33%;
 }
