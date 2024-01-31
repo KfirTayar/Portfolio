@@ -6,7 +6,6 @@ import Copyright from './components/Copyright';
 
 // Imports from MUI lib
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -14,11 +13,13 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Paper from "@mui/material/Paper";
 import {Snackbar} from "@mui/material";
+import LoadingButton from '@mui/lab/LoadingButton';
 
 const ContactPage = () => {
 
     const [copyMsg, setCopyMsg] = React.useState(false);
     const [sendData, setSendData] = React.useState(false);
+    const [loading, setLoading] = useState(false);
 
     const handleClose = () => {
         setCopyMsg(false);
@@ -62,7 +63,6 @@ const ContactPage = () => {
         setDescription('');
     }
 
-
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -78,16 +78,18 @@ const ContactPage = () => {
 
         axios.defaults.baseURL = "https://kfirtayar.onrender.com";
 
-        setSendData(true);
-        setTimeout(handleClose, 3000);
-
-        clearButtons();
+        setLoading(true);
 
         try {
             await axios.post('/api/contact', formData);
             console.log(('Data submitted successfully!'))
         } catch (error) {
             console.log('Error submitting data:', error);
+        } finally {
+            setSendData(true);
+            setTimeout(handleClose, 3000);
+            setLoading(false)
+            clearButtons();
         }
     }
 
@@ -181,14 +183,15 @@ const ContactPage = () => {
                             />
                         </Grid>
                     </Grid>
-                    <Button
+                    <LoadingButton
+                        loading={loading}
                         type="submit"
                         fullWidth
                         variant="contained"
                         sx={{ mt: 3, mb: 2 }}
                     >
                         SEND
-                    </Button>
+                    </LoadingButton>
                     <Snackbar
                         open={sendData}
                         anchorOrigin={{ vertical:'bottom', horizontal:'center' }}
