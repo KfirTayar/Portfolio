@@ -97,7 +97,7 @@ const ContactPage = () => {
     return (
         <div className='a'>
         <Container className="contact-container" component="main" maxWidth="md">
-            <Typography variant="h4" className="contact-options" fontFamily='cursive' align={"center"}>
+            <Typography variant="h4" className="contact-options" fontFamily='sans-serif' align={"center"}>
                 How to reach me?
             </Typography>
                 <Paper className="contact-paper" elevation={4} sx={{mt:2}}>
@@ -106,7 +106,7 @@ const ContactPage = () => {
                     </p>
                     <h1>OR</h1>
                 <Box component="form" noValidate onSubmit={handleSubmit} sx={{}}>
-                    <Typography variant="h8" fontFamily='cursive' align={"left"}>
+                    <Typography variant="h8" fontFamily='sans-serif' align={"left"}>
                         Fill out the contact form and I'll be in touch as soon as possible :)
                     </Typography>
                     <Grid container spacing={2} sx={{mt:0.1}}>

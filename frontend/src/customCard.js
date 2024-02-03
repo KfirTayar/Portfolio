@@ -7,7 +7,7 @@ const CustomCard = ({title, content, image, actionButtonLabel, onActionButtonCli
         <Card sx={{ display: 'flex', flexDirection: 'column', height: 460 }}>
             <CardMedia component="img" alt={title} height='auto' src={image} />
             <CardContent sx={{ flex: 1 }}>
-                <Typography variant="body2" color="text.secondary" fontFamily='cursive' fontWeight='bold'>
+                <Typography variant="body2" color="text.secondary" fontFamily='sans-serif' fontWeight='bold'>
                     {content}
                 </Typography>
             </CardContent>

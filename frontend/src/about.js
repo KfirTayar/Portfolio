@@ -26,9 +26,9 @@ const AboutPage = () => {
                 Welcome,<br />I'm Kfir Tayar, a passionate Software Developer<br />
             </Typography>
 
-            <Typography variant="h6" className="description" fontFamily='cursive' sx={{m:15}} >
+            <Typography variant="h6" className="description" fontFamily='sans-serif' sx={{m:15}} >
                 Enthusiastic about coding and enjoy solving problems in creative ways. I'm a quick learner, an 'out-of-the-box' thinker, and a hard worker. I am adept at both collaborative teamwork and working independently, and I'm eager to expand my skills. Looking for a full/part-time position where I can learn and grow.
-                <Typography variant="h5" className="skills-description" fontFamily='cursive' fontWeight='bold' sx={{marginY:6}}>
+                <Typography variant="h5" className="skills-description" fontFamily='sans-serif' fontWeight='bold' sx={{marginY:6}}>
                     Actively seeking opportunities in this fields:<br />
                     <Stack direction="row" spacing={1} marginY={2}>
                         <Chip label="Full Stack Development" color='secondary'/>
@@ -38,7 +38,7 @@ const AboutPage = () => {
                         <Chip label="Computer Vision" color='secondary'/>
                         <Chip label="Frontend Development" color='secondary'/>
                     </Stack>
-                    <Typography variant="h5" className="skills-description" fontFamily='cursive' fontWeight='bold' sx={{marginY:6}}>
+                    <Typography variant="h5" className="skills-description" fontFamily='sans-serif' fontWeight='bold' sx={{marginY:6}}>
                         My Stack:<br />
                         <p className='skills-description-images'>
                             <img className='about-image' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="c" width="80" height="80"/>
