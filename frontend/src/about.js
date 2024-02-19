@@ -30,13 +30,12 @@ const AboutPage = () => {
                 Enthusiastic about coding and enjoy solving problems in creative ways. I'm a quick learner, an 'out-of-the-box' thinker, and a hard worker. I am adept at both collaborative teamwork and working independently, and I'm eager to expand my skills. Looking for a full/part-time position where I can learn and grow.
                 <Typography variant="h5" className="skills-description" fontFamily='sans-serif' fontWeight='bold' sx={{marginY:6}}>
                     Actively seeking opportunities in this fields:<br />
-                    <Stack direction="row" spacing={1} marginY={2}>
+                    <Stack direction="row" spacing={1} marginY={2} useFlexGap flexWrap="wrap">
                         <Chip label="Full Stack Development" color='secondary'/>
-                        <Chip label="Backend Development" color='secondary'/>
+                        <Chip label="Computer Vision" color='secondary'/>
+                        <Chip label="Backend / Frontend Development" color='secondary'/>
                         <Chip label="Data Science" color='secondary'/>
                         <Chip label="Machine Learning" color='secondary'/>
-                        <Chip label="Computer Vision" color='secondary'/>
-                        <Chip label="Frontend Development" color='secondary'/>
                     </Stack>
                     <Typography variant="h5" className="skills-description" fontFamily='sans-serif' fontWeight='bold' sx={{marginY:6}}>
                         My Stack:<br />
