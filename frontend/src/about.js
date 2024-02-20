@@ -31,11 +31,11 @@ const AboutPage = () => {
                 <Typography variant="h5" className="skills-description" fontFamily='sans-serif' fontWeight='bold' sx={{marginY:6}}>
                     Actively seeking opportunities in this fields:<br />
                     <Stack direction="row" spacing={1} marginY={2} useFlexGap flexWrap="wrap">
-                        <Chip label="Full Stack Development" color='secondary'/>
-                        <Chip label="Computer Vision" color='secondary'/>
-                        <Chip label="Backend / Frontend Development" color='secondary'/>
-                        <Chip label="Data Science" color='secondary'/>
-                        <Chip label="Machine Learning" color='secondary'/>
+                        <Chip className='about-label' label="Full Stack Development" color='secondary'/>
+                        <Chip className='about-label' label="Computer Vision" color='secondary'/>
+                        <Chip className='about-label' label="Backend / Frontend Development" color='secondary'/>
+                        <Chip className='about-label' label="Data Science" color='secondary'/>
+                        <Chip className='about-label' label="Machine Learning" color='secondary'/>
                     </Stack>
                     <Typography variant="h5" className="skills-description" fontFamily='sans-serif' fontWeight='bold' sx={{marginY:6}}>
                         My Stack:<br />
