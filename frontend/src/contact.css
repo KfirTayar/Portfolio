@@ -37,3 +37,11 @@
 .gmail-img {
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+
+    .contact-paper {
+        flex-direction: column;
+    }
+
+}
