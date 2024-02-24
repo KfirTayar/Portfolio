@@ -27,7 +27,7 @@ const AboutPage = () => {
             </Typography>
 
             <Typography variant="h6" className="description" fontFamily='sans-serif' sx={{m:15}} >
-                Enthusiastic about coding and enjoy solving problems in creative ways. I'm a quick learner, an 'out-of-the-box' thinker, and a hard worker. I am adept at both collaborative teamwork and working independently, and I'm eager to expand my skills. Looking for a full/part-time position where I can learn and grow.
+                Enthusiastic about coding and enjoy solving problems creatively. I'm a quick learner, an 'out-of-the-box' thinker, and a hard worker. I'm adept at both collaborative teamwork and working independently, and eager to expand my skills. Looking for a full / part-time position where I can learn and grow.
                 <Typography variant="h5" className="skills-description" fontFamily='sans-serif' fontWeight='bold' sx={{marginY:6}}>
                     Actively seeking opportunities in this fields:<br />
                     <Stack direction="row" spacing={1} marginY={2} useFlexGap flexWrap="wrap">
