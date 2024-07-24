@@ -9,6 +9,7 @@ import Copyright from "./components/Copyright";
 
 // Import images
 import FriendOnTheRoadImg from './images/friend_on_the_road.jpg';
+import DogAdoptionDashboardImg from './images/dog_adoption_dashboard.png'
 import ParkingMeterImg from './images/parking_meter.jpg';
 import CostManagerClientImg from './images/cost_manager_client_side.jpg';
 import CostManagerServerImg from './images/cost_manager_server_side.jpg';
@@ -28,26 +29,16 @@ function ProjectsPage() {
     const cardData = [
         {
             id: 1,
-            title: 'COST MANAGER - CLIENT SIDE',
-            content: 'A cost manager application that was built with React.js and using Local Storage.',
-            image: CostManagerClientImg,
+            title: 'Dog Adoption Dashboard',
+            content: 'MERN Stack application that provides a manager control interface for a dog adoption organization.',
+            image: DogAdoptionDashboardImg,
             actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Cost-Manager-Client-Side" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <a href="https://github.com/KfirTayar/Dog_Adoption_Dashboard.git" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
                 <div className="overlay-text">project page</div> </div>,
         },
 
         {
             id: 2,
-            title: 'MERN STACK PORTFOLIO',
-            content: 'A MERN Stack portfolio application that combines Backend and Frontend development.',
-            image: PortfolioImg,
-            actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Portfolio" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
-                <div className="overlay-text">project page</div> </div>,
-        },
-
-        {
-            id: 3,
             title: 'COST MANAGER - SERVER SIDE',
             content: 'A cost manager RESTful web service that was built with Express.js and using MongoDB.',
             image: CostManagerServerImg,
@@ -57,17 +48,17 @@ function ProjectsPage() {
         },
 
         {
-            id: 4,
-            title: 'QUIZZY LIBRARY',
-            content: 'A Java library for creating quizzes implemented with the following design patterns: Singleton, DAO, Factory, Prototype, and Builder.',
-            image: QuizzyLibraryImg,
+            id: 3,
+            title: 'COST MANAGER - CLIENT SIDE',
+            content: 'A cost manager application that was built with React.js and using Local Storage.',
+            image: CostManagerClientImg,
             actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/Quizzy-Library" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <a href="https://github.com/KfirTayar/Cost-Manager-Client-Side" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
                 <div className="overlay-text">project page</div> </div>,
         },
 
         {
-            id: 5,
+            id: 4,
             title: 'FRIEND ON THE ROAD',
             content: 'Object tracking project that was built with Python and using OpenCV library.',
             image: FriendOnTheRoadImg,
@@ -76,6 +67,15 @@ function ProjectsPage() {
                 <div className="overlay-text">project page</div> </div>,
         },
 
+        {
+            id: 5,
+            title: 'TEXT ANALYSIS',
+            content: 'ML model that gets a corpus and uses ML algorithms (KNN, Decision-Tree, SVM, etc) and classifies the texts by gender.',
+            image: TextAnalysisImg,
+            actionButtonLabel: <div className='open-github-page'>
+                <a href="https://github.com/KfirTayar/ML-Text-Analysis" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <div className="overlay-text">project page</div> </div>,
+        },
 
         {
             id: 6,
@@ -89,11 +89,11 @@ function ProjectsPage() {
 
         {
             id: 7,
-            title: 'TEXT ANALYSIS',
-            content: 'ML model that gets a corpus and uses ML algorithms (KNN, Decision-Tree, SVM, etc) and classifies the texts by gender.',
-            image: TextAnalysisImg,
+            title: 'QUIZZY LIBRARY',
+            content: 'A Java library for creating quizzes implemented with the following design patterns: Singleton, DAO, Factory, Prototype, and Builder.',
+            image: QuizzyLibraryImg,
             actionButtonLabel: <div className='open-github-page'>
-                <a href="https://github.com/KfirTayar/ML-Text-Analysis" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <a href="https://github.com/KfirTayar/Quizzy-Library" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
                 <div className="overlay-text">project page</div> </div>,
         },
 
@@ -109,6 +109,16 @@ function ProjectsPage() {
 
         {
             id: 9,
+            title: 'MERN STACK PORTFOLIO',
+            content: 'MERN Stack application that showcases my portfolio.',
+            image: PortfolioImg,
+            actionButtonLabel: <div className='open-github-page'>
+                <a href="https://github.com/KfirTayar/Portfolio" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-page" height="40" width="40" /></a>
+                <div className="overlay-text">project page</div> </div>,
+        },
+
+        {
+            id: 10,
             title: 'SECURE DEVELOPMENT',
             content: 'A website that is vulnerable to SQLI and XSS attacks.',
             image: SecureDevelopmentImg,
@@ -122,7 +132,7 @@ function ProjectsPage() {
     return (
         <Container className="projects-container" maxWidth="md">
             <Paper className="projects-paper" elevation={4} sx={{backgroundColor: '#ffffff'}}>
-                <Grid container spacing={2}>
+                <Grid container spacing={5}>
                     {cardData.map((card) => (
                         <Grid item key={card.id} className="card">
                             <CustomCard
